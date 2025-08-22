@@ -130,9 +130,7 @@ function welcomeVideoToken() {
   });
 
   const getIntrinsic = () => {
-    const iw = foxyVideo.videoWidth || FALLBACK_W;
-    const ih = foxyVideo.videoHeight || FALLBACK_H;
-    return { iw, ih };
+    return { iw: 1920, ih: 1080 };
   };
 
   const fitMode = (params.get("fit") || "cover").toLowerCase();
