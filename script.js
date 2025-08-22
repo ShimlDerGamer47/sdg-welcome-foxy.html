@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", welcomeVideoToken);
 
 function welcomeVideoToken() {
-  const html = document.documentElement;
+  const html = document.documentElement;https://github.com/ShimlDerGamer47/sdg-welcome-foxy.html/blob/main/script.js
   const fontFamily = "--font-family";
   const robotoBold = getComputedStyle(html).getPropertyValue(fontFamily).trim();
   const body = document.body;
@@ -130,7 +130,9 @@ function welcomeVideoToken() {
   });
 
   const getIntrinsic = () => {
-    return { iw: 1920, ih: 1080 };
+    const iw = foxyVideo.videoWidth || FALLBACK_W;
+    const ih = foxyVideo.videoHeight || FALLBACK_H;
+    return { iw, ih };
   };
 
   const fitMode = (params.get("fit") || "cover").toLowerCase();
