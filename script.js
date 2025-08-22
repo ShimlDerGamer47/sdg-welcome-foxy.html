@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", welcomeVideoToken);
 
 function welcomeVideoToken() {
-  const html = document.documentElement;https://github.com/ShimlDerGamer47/sdg-welcome-foxy.html/blob/main/script.js
+  const html = document.documentElement;
   const fontFamily = "--font-family";
   const robotoBold = getComputedStyle(html).getPropertyValue(fontFamily).trim();
   const body = document.body;
